@@ -9,8 +9,8 @@
 
 The goal of `mapSenegal` is to provides access to administrative
 boundaries of Senegal at several levels (regions, departements,
-arrondissements and communes), These boundaries are based on
-‘[GDAM](https://gadm.org/index.html)’. The package also gives access to
+arrondissements and communes). These boundaries are based on
+[GDAM](https://gadm.org/index.html). The package also gives access to
 roads, localities, universities and health facilities locations.
 
 ## Installation
