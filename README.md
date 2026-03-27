@@ -9,9 +9,9 @@
 
 The goal of `mapSenegal` is to provides access to administrative
 boundaries of Senegal at several levels (regions, departements,
-arrondissements and communes), These boundaries are based on ‘GDAM’. The
-package also gives access to roads, localities, universities and health
-facilities locations.
+arrondissements and communes), These boundaries are based on
+‘[GDAM](https://gadm.org/index.html)’. The package also gives access to
+roads, localities, universities and health facilities locations.
 
 ## Installation
 
@@ -56,8 +56,8 @@ hf <- sn_health_facilities()
 univ <- sn_universities()
 roads <- sn_roads()
 
-mf_map(pays, col = NA, border = NA, expandBB = c(0,0,.05,0))
-mf_map(zone, col = "lightgrey", add =  TRUE)
+mf_map(pays, col = NA, border = NA, expandBB = c(0, 0, .05, 0))
+mf_map(zone, col = "lightgrey", add = TRUE)
 mf_shadow(pays, add = TRUE)
 mf_graticule(pays, add = T)
 mf_map(com, lwd = .5, add = TRUE, border = 0)
@@ -73,7 +73,7 @@ mf_title("Administrative Units")
 ``` r
 
 mf_map(pays, col = NA, border = NA)
-mf_map(zone, col = "lightgrey", add =  TRUE)
+mf_map(zone, col = "lightgrey", add = TRUE)
 mf_map(pays, lwd = 2, add = TRUE)
 mf_map(subset(roads, TYPE %in% 4:5), col = "darkblue", lwd = .5, add = TRUE)
 mf_map(subset(roads, TYPE %in% 1:3), col = "darkblue", lwd = 4, add = TRUE)
@@ -88,7 +88,7 @@ mf_title("Road Network")
 ``` r
 
 mf_map(pays, col = NA, border = NA)
-mf_map(zone, col = "lightgrey", add =  TRUE)
+mf_map(zone, col = "lightgrey", add = TRUE)
 mf_shadow(pays, add = TRUE)
 mf_map(pays, lwd = 2, add = TRUE)
 mf_map(dep, col = NA, lwd = 1, add = TRUE)
@@ -103,15 +103,18 @@ mf_title(paste0(nrow(loc), " Localities"))
 ``` r
 
 mf_map(pays, col = NA, border = NA)
-mf_map(zone, col = "lightgrey", add =  TRUE)
+mf_map(zone, col = "lightgrey", add = TRUE)
 mf_shadow(pays, add = TRUE)
 mf_map(pays, add = TRUE)
 mf_map(reg, col = NA, lwd = 1, add = TRUE)
 mf_map(univ, "NB_STUDENTS", "prop", leg_val_big = " ")
-mf_annotation(x = c(239471, 1655820), 
-                            txt = "Université Numérique Cheikh Hamidou Lane", halo = T)
-mf_annotation(c(239471, 1595149), 
-                            txt = "Université Cheick Anta Diop", halo = T, pos = "bottomright")
+mf_annotation(
+  x = c(239471, 1655820),
+  txt = "Université Numérique Cheikh Hamidou Lane", halo = T
+)
+mf_annotation(c(239471, 1595149),
+  txt = "Université Cheick Anta Diop", halo = T, pos = "bottomright"
+)
 mf_arrow()
 mf_scale(pos = "bottomleft")
 mf_title("Universities")
@@ -121,13 +124,15 @@ mf_title("Universities")
 
 ``` r
 
-mf_map(pays, col = NA, border = NA, expandBB = c(0,0,0,.1))
-mf_map(zone, col = "lightgrey", add =  TRUE)
+mf_map(pays, col = NA, border = NA, expandBB = c(0, 0, 0, .1))
+mf_map(zone, col = "lightgrey", add = TRUE)
 mf_shadow(pays, add = TRUE)
 mf_map(pays, add = TRUE)
-mf_map(hf, var = "TYPE", type = "symb", cex = .75, 
-             pal = "Dark 3", add = TRUE, leg_title = "",
-             leg_pos = "topright", leg_frame = TRUE)
+mf_map(hf,
+  var = "TYPE", type = "symb", cex = .75,
+  pal = "Dark 3", add = TRUE, leg_title = "",
+  leg_pos = "topright", leg_frame = TRUE
+)
 mf_arrow()
 mf_scale(pos = "bottomleft")
 mf_title("Health facilities")

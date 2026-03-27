@@ -27,7 +27,7 @@ Communes of Senegal.
 \examples{
 com <- sn_communes()
 plot(com)
-if(require("mapsf")){
+if (require("mapsf")) {
   mf_map(com)
   mf_title("Communes of Senegal")
 }

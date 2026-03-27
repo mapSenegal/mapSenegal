@@ -26,7 +26,7 @@ Arrondissements of Senegal.
 \examples{
 ardt <- sn_arrondissements()
 plot(ardt)
-if(require("mapsf")){
+if (require("mapsf")) {
   mf_map(ardt)
   mf_title("Arrondissements of Senegal")
 }

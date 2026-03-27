@@ -23,7 +23,7 @@ Universities of Senegal.
 \examples{
 univ <- sn_universities()
 plot(univ)
-if(require("mapsf")){
+if (require("mapsf")) {
   mf_map(univ, var = "NB_STUDENTS", type = "prop", add = FALSE)
   mf_title("Universities of Senegal")
 }

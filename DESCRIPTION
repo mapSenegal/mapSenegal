@@ -1,6 +1,6 @@
 Package: mapSenegal
 Type: Package
-Title: Maps of Senegal 
+Title: Administrative Boundaries of Senegal
 Version: 0.1.0
 Authors@R:
     c(person(given = "Timothée",
@@ -12,15 +12,21 @@ Authors@R:
              family = "Touré",
              role = "aut",
              comment = c(ORCID = "0009-0008-0939-2019")), 
+      person(given = "Hugues",
+             family = "Pecout",
+             role = "ctb",
+             comment = c(ORCID = "0000-0002-0246-0954", "Logo")),
       person(given = "Robert J.", 
              family = "Hijmans", 
              role = c("cph"), 
 			       comment = c(ORCID = "0000-0001-5872-2872", "GADM database")))
 Description: Administrative boundaries of Senegal at several levels (regions,
-    departements, arrondissements and communes), based on 'GDAM', are provided. 
+    departements, arrondissements and communes), based on 'GDAM', are provided.
     The package also gives access to localities, universities, roads and health
-    facilities locations. 
+    facilities locations.
 Depends: R (>= 3.5.0), sf
+URL: https://github.com/mapSenegal/mapSenegal
+BugReports: https://github.com/mapSenegal/mapSenegal/issues
 Suggests: mapsf
 License: GPL-3
 Encoding: UTF-8

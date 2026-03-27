@@ -28,7 +28,7 @@ Regions of Senegal, level-1 entities.
 \examples{
 reg <- sn_regions()
 plot(reg)
-if(require("mapsf")){
+if (require("mapsf")) {
   mf_map(reg)
   mf_title("Regions of Senegal")
 }

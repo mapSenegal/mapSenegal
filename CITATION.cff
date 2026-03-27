@@ -1,0 +1,68 @@
+# --------------------------------------------
+# CITATION file created with {cffr} R package
+# See also: https://docs.ropensci.org/cffr/
+# --------------------------------------------
+ 
+cff-version: 1.2.0
+message: 'To cite package "mapSenegal" in publications use:'
+type: software
+license: GPL-3.0-only
+title: 'mapSenegal: Maps of Senegal'
+version: 0.1.0
+abstract: Administrative boundaries of Senegal at several levels (regions, departements,
+  arrondissements and communes), based on 'GDAM', are provided. The package also gives
+  access to localities, universities, roads and health facilities locations.
+authors:
+- family-names: Giraud
+  given-names: Timothée
+  email: timothee.giraud@cnrs.fr
+  orcid: https://orcid.org/0000-0002-1932-3323
+- family-names: Touré
+  given-names: Labaly
+  orcid: https://orcid.org/0009-0008-0939-2019
+repository-code: https://github.com/mapSenegal/mapSenegal
+url: https://github.com/mapSenegal/mapSenegal
+contact:
+- family-names: Giraud
+  given-names: Timothée
+  email: timothee.giraud@cnrs.fr
+  orcid: https://orcid.org/0000-0002-1932-3323
+references:
+- type: software
+  title: 'R: A Language and Environment for Statistical Computing'
+  notes: Depends
+  url: https://www.R-project.org/
+  authors:
+  - name: R Core Team
+  institution:
+    name: R Foundation for Statistical Computing
+    address: Vienna, Austria
+  year: '2026'
+  version: '>= 3.5.0'
+- type: software
+  title: sf
+  abstract: 'sf: Simple Features for R'
+  notes: Depends
+  url: https://r-spatial.github.io/sf/
+  repository: https://CRAN.R-project.org/package=sf
+  authors:
+  - family-names: Pebesma
+    given-names: Edzer
+    email: edzer.pebesma@uni-muenster.de
+    orcid: https://orcid.org/0000-0001-8049-7069
+  year: '2026'
+  doi: 10.32614/CRAN.package.sf
+- type: software
+  title: mapsf
+  abstract: 'mapsf: Thematic Cartography'
+  notes: Suggests
+  url: https://riatelab.github.io/mapsf/
+  repository: https://CRAN.R-project.org/package=mapsf
+  authors:
+  - family-names: Giraud
+    given-names: Timothée
+    email: timothee.giraud@cnrs.fr
+    orcid: https://orcid.org/0000-0002-1932-3323
+  year: '2026'
+  doi: 10.32614/CRAN.package.mapsf
+

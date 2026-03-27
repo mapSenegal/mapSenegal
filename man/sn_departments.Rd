@@ -28,7 +28,7 @@ Departments of Senegal, level-2 entities.
 \examples{
 dep <- sn_departments()
 plot(dep)
-if(require("mapsf")){
+if (require("mapsf")) {
   mf_map(dep)
   mf_title("Departments of Senegal")
 }

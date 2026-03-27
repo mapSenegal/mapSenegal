@@ -23,7 +23,7 @@ Localites of Senegal.
 \examples{
 loc <- sn_localities()
 plot(loc)
-if(require("mapsf")){
+if (require("mapsf")) {
   mf_map(loc)
   mf_title("Localities of Senegal")
 }

@@ -24,7 +24,7 @@ Neighboring countries of Senegal, level-0 entities.
 \examples{
 neighbors <- sn_neighbors()
 plot(neighbors)
-if(require("mapsf")){
+if (require("mapsf")) {
   mf_map(neighbors)
   mf_label(neighbors, "NAME", halo = TRUE)
   mf_title("Senegal and Neighboring Countries")

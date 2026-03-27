@@ -23,7 +23,7 @@ Senegal, level-0 entity.
 \examples{
 senegal <- sn_country()
 plot(senegal)
-if(require("mapsf")){
+if (require("mapsf")) {
   mf_map(senegal)
   mf_title("Senegal")
 }

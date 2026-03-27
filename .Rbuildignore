@@ -4,3 +4,7 @@ data-raw
 notes.*
 ^README\.Rmd$
 
+^CITATION\.cff$
+^codemeta\.json$
+
+mapSenegal

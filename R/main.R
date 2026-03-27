@@ -12,15 +12,14 @@
 #' @examples
 #' senegal <- sn_country()
 #' plot(senegal)
-#' if(require("mapsf")){
+#' if (require("mapsf")) {
 #'   mf_map(senegal)
 #'   mf_title("Senegal")
 #' }
 #' @export
 sn_country <- function() {
-	readRDS(system.file("rds/pays.rds", package = "mapSenegal"))
+  readRDS(system.file("rds/pays.rds", package = "mapSenegal"))
 }
-
 
 
 #' @title Neighboring countries
@@ -37,7 +36,7 @@ sn_country <- function() {
 #' @examples
 #' neighbors <- sn_neighbors()
 #' plot(neighbors)
-#' if(require("mapsf")){
+#' if (require("mapsf")) {
 #'   mf_map(neighbors)
 #'   mf_label(neighbors, "NAME", halo = TRUE)
 #'   mf_title("Senegal and Neighboring Countries")
@@ -45,9 +44,8 @@ sn_country <- function() {
 #' @export
 #' @export
 sn_neighbors <- function() {
-	readRDS(system.file("rds/pays_limitrophes.rds", package = "mapSenegal"))
+  readRDS(system.file("rds/pays_limitrophes.rds", package = "mapSenegal"))
 }
-
 
 
 #' @title Regions
@@ -68,12 +66,12 @@ sn_neighbors <- function() {
 #' @examples
 #' reg <- sn_regions()
 #' plot(reg)
-#' if(require("mapsf")){
+#' if (require("mapsf")) {
 #'   mf_map(reg)
 #'   mf_title("Regions of Senegal")
 #' }
 sn_regions <- function() {
-	readRDS(system.file("rds/regions.rds", package = "mapSenegal"))
+  readRDS(system.file("rds/regions.rds", package = "mapSenegal"))
 }
 
 #' @title Departments
@@ -94,12 +92,12 @@ sn_regions <- function() {
 #' @examples
 #' dep <- sn_departments()
 #' plot(dep)
-#' if(require("mapsf")){
+#' if (require("mapsf")) {
 #'   mf_map(dep)
 #'   mf_title("Departments of Senegal")
 #' }
 sn_departments <- function() {
-	readRDS(system.file("rds/departements.rds", package = "mapSenegal"))
+  readRDS(system.file("rds/departements.rds", package = "mapSenegal"))
 }
 
 #' @title Arrondissements
@@ -118,12 +116,12 @@ sn_departments <- function() {
 #' @examples
 #' ardt <- sn_arrondissements()
 #' plot(ardt)
-#' if(require("mapsf")){
+#' if (require("mapsf")) {
 #'   mf_map(ardt)
 #'   mf_title("Arrondissements of Senegal")
 #' }
 sn_arrondissements <- function() {
-	readRDS(system.file("rds/arrondissements.rds", package = "mapSenegal"))
+  readRDS(system.file("rds/arrondissements.rds", package = "mapSenegal"))
 }
 
 #' @title Communes
@@ -143,12 +141,12 @@ sn_arrondissements <- function() {
 #' @examples
 #' com <- sn_communes()
 #' plot(com)
-#' if(require("mapsf")){
+#' if (require("mapsf")) {
 #'   mf_map(com)
 #'   mf_title("Communes of Senegal")
 #' }
 sn_communes <- function() {
-	readRDS(system.file("rds/communes.rds", package = "mapSenegal"))
+  readRDS(system.file("rds/communes.rds", package = "mapSenegal"))
 }
 
 
@@ -165,14 +163,13 @@ sn_communes <- function() {
 #' @examples
 #' loc <- sn_localities()
 #' plot(loc)
-#' if(require("mapsf")){
+#' if (require("mapsf")) {
 #'   mf_map(loc)
 #'   mf_title("Localities of Senegal")
 #' }
 sn_localities <- function() {
-	readRDS(system.file("rds/localites.rds", package = "mapSenegal"))
+  readRDS(system.file("rds/localites.rds", package = "mapSenegal"))
 }
-
 
 
 #' @title Roads
@@ -188,12 +185,12 @@ sn_localities <- function() {
 #' @examples
 #' roads <- sn_roads()
 #' plot(roads)
-#' if(require("mapsf")){
+#' if (require("mapsf")) {
 #'   mf_map(roads, var = "TYPE", type = "typo", lwd = 2)
 #'   mf_title("Roads of Senegal")
 #' }
 sn_roads <- function() {
-	readRDS(system.file("rds/routes.rds", package = "mapSenegal"))
+  readRDS(system.file("rds/routes.rds", package = "mapSenegal"))
 }
 
 
@@ -211,12 +208,12 @@ sn_roads <- function() {
 #' @examples
 #' hf <- sn_health_facilities()
 #' plot(hf)
-#' if(require("mapsf")){
+#' if (require("mapsf")) {
 #'   mf_map(hf, var = "TYPE", type = "symb", cex = 1, pal = "Dark 3", add = FALSE)
 #'   mf_title("Health Facilities of Senegal")
 #' }
 sn_health_facilities <- function() {
-	readRDS(system.file("rds/structures_sanitaires.rds", package = "mapSenegal"))
+  readRDS(system.file("rds/structures_sanitaires.rds", package = "mapSenegal"))
 }
 
 
@@ -233,14 +230,23 @@ sn_health_facilities <- function() {
 #' @examples
 #' univ <- sn_universities()
 #' plot(univ)
-#' if(require("mapsf")){
+#' if (require("mapsf")) {
 #'   mf_map(univ, var = "NB_STUDENTS", type = "prop", add = FALSE)
 #'   mf_title("Universities of Senegal")
 #' }
 sn_universities <- function() {
-	readRDS(system.file("rds/universites.rds", package = "mapSenegal"))
+  readRDS(system.file("rds/universites.rds", package = "mapSenegal"))
 }
 
 
 
 
+#' @title Administrative Boundaries of Senegal
+#' @name mapSenegal
+#' @description
+#' Administrative boundaries of Senegal at several levels (regions,
+#' departements, arrondissements and communes), based on 'GDAM', are provided.
+#' The package also gives access to localities, universities, roads and health
+#' facilities locations.
+#' @docType package
+"_PACKAGE"

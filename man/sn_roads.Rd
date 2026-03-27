@@ -23,7 +23,7 @@ roads, 4 for departmental roads, 5 for other roads.
 \examples{
 roads <- sn_roads()
 plot(roads)
-if(require("mapsf")){
+if (require("mapsf")) {
   mf_map(roads, var = "TYPE", type = "typo", lwd = 2)
   mf_title("Roads of Senegal")
 }

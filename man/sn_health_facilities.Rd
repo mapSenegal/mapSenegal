@@ -24,7 +24,7 @@ Health facilities of Senegal
 \examples{
 hf <- sn_health_facilities()
 plot(hf)
-if(require("mapsf")){
+if (require("mapsf")) {
   mf_map(hf, var = "TYPE", type = "symb", cex = 1, pal = "Dark 3", add = FALSE)
   mf_title("Health Facilities of Senegal")
 }
