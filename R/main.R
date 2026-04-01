@@ -244,9 +244,11 @@ sn_universities <- function() {
 #' @title Administrative Boundaries of Senegal
 #' @name mapSenegal
 #' @description
-#' Administrative boundaries of Senegal at several levels (regions,
-#' departements, arrondissements and communes), based on 'GDAM', are provided.
-#' The package also gives access to localities, universities, roads and health
-#' facilities locations.
+#' The administrative boundaries of Senegal are provided at several
+#' levels, including regions, departments, arrondissements and communes.
+#' The Global Administrative Areas database, or `GADM`, is
+#' the primary source for these layers. The dataset is complemented by the
+#' incorporation of additional geographic layers, such as localities,
+#' universities, roads, and health facility locations.
 #' @docType package
 "_PACKAGE"
