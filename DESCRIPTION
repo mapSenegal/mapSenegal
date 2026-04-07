@@ -22,7 +22,7 @@ Authors@R:
 			       comment = c(ORCID = "0000-0001-5872-2872", "GADM database")))
 Description: The administrative boundaries of Senegal are provided at several
     levels, including regions, departments, arrondissements and communes.
-    The Global Administrative Areas database, or `GADM` <https://gadm.org/>, is
+    The Global Administrative Areas database, or GADM <https://gadm.org/>, is
     the primary source for these layers. The dataset is complemented by the
     incorporation of additional geographic layers, such as localities,
     universities, roads, or health facility locations.

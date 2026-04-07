@@ -2,12 +2,12 @@
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
   "identifier": "mapSenegal",
-  "description": "Administrative boundaries of Senegal at several levels (regions, departements, arrondissements and communes), based on 'GDAM', are provided. The package also gives access to localities, universities, roads and health facilities locations. ",
-  "name": "mapSenegal: Maps of Senegal ",
+  "description": "The administrative boundaries of Senegal are provided at several levels, including regions, departments, arrondissements and communes. The Global Administrative Areas database, or GADM <https://gadm.org/>, is the primary source for these layers. The dataset is complemented by the incorporation of additional geographic layers, such as localities, universities, roads, or health facility locations.",
+  "name": "mapSenegal: Administrative Boundaries of Senegal",
   "codeRepository": "https://github.com/mapSenegal/mapSenegal",
   "issueTracker": "https://github.com/mapSenegal/mapSenegal/issues",
   "license": "https://spdx.org/licenses/GPL-3.0",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -89,5 +89,5 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "5324.319KB"
+  "fileSize": "3836.001KB"
 }

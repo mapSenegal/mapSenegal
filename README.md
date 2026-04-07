@@ -5,6 +5,7 @@
 
 <!-- badges: start -->
 
+[![CRAN](https://www.r-pkg.org/badges/version-ago/mapSenegal)](https://cran.r-project.org/package=mapSenegal)
 <!-- badges: end -->
 
 The goal of `mapSenegal` is to provides access to administrative
@@ -15,11 +16,18 @@ roads, localities, universities and health facilities locations.
 
 ## Installation
 
+You can install the current version of `mapSenegal` from
+[CRAN](https://CRAN.R-project.org/package=mapSenegal) with:
+
+``` r
+install.packages("mapSenegal")
+```
+
 You can install the development version of `mapSenegal` with:
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("rCarto/mapSenegal")
+remotes::install_github("mapSenegal/mapSenegal")
 ```
 
 ## Examples

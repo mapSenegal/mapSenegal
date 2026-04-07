@@ -7,11 +7,13 @@ cff-version: 1.2.0
 message: 'To cite package "mapSenegal" in publications use:'
 type: software
 license: GPL-3.0-only
-title: 'mapSenegal: Maps of Senegal'
-version: 0.1.0
-abstract: Administrative boundaries of Senegal at several levels (regions, departements,
-  arrondissements and communes), based on 'GDAM', are provided. The package also gives
-  access to localities, universities, roads and health facilities locations.
+title: 'mapSenegal: Administrative Boundaries of Senegal'
+version: 0.1.1
+abstract: The administrative boundaries of Senegal are provided at several levels,
+  including regions, departments, arrondissements and communes. The Global Administrative
+  Areas database, or GADM <https://gadm.org/>, is the primary source for these layers.
+  The dataset is complemented by the incorporation of additional geographic layers,
+  such as localities, universities, roads, or health facility locations.
 authors:
 - family-names: Giraud
   given-names: Timothée
@@ -27,6 +29,15 @@ contact:
   given-names: Timothée
   email: timothee.giraud@cnrs.fr
   orcid: https://orcid.org/0000-0002-1932-3323
+keywords:
+- cartography
+- geography
+- map
+- maps
+- r
+- r-package
+- rstats
+- spatial
 references:
 - type: software
   title: 'R: A Language and Environment for Statistical Computing'
